@@ -1,15 +1,15 @@
 
 ----
-> ⚠️ This is a customized fork of the [Sokol](https://github.com/floooh/sokol) single-file app framework library, maintained by [Wake.Tools](https://wake.tools), for integration into the Wake runtime.
+> ⚠️ This is a customized fork of the [Sokol](https://github.com/floooh/sokol) single-file app framework library, maintained by [Wake.Tools](https://wake.tools) for integration into the Wake runtime.
 ----
->🔹 Only the `sokol_app` component of this fork is currently used to build the Wake-compatible app framework backend (window + context + input).
+>🔹 Only the `sokol_app` component of this fork is currently used to build the Wake-compatible app framework backend (window, context, input).
 
  While this fork is built and packaged internally for Wake.Tools, it remains compatible with the original Sokol sources and build process.  
  The maintained version is tailored for high stability and deep integration with the Wake environment.
 
  🛠️ Developers may create functional derivatives of this fork. However, it is **strongly recommended** to stay aligned with the official Wake.Tools version, which is actively maintained and tested for consistent runtime behavior.
 
- 📦 To ensure full compatibility with Wake's module system, dynamic libraries should be built using the following naming convention:  
+ 📦 To ensure full compatibility with Wake's module system, dynamic libraries should follow the naming convention:  
  `author--name-version-sys-type.ext`
 > (e.g., `myrepo--sokolapp-0.2.0rc1-w32-r.dll`, `myrepo--sokolapp-0.2.0rc1-osx-d.dylib`, etc.)
 
@@ -36,7 +36,10 @@ gcc -shared -o myrepo--sokolapp-0.2.0rc1-w32-r.dll example.c
 ```
 ----
 > © 2025 Majify Technologies.  
-> This fork is distributed under the terms of the MIT License.
+> This fork is maintained for integration with the Wake runtime.
+> The source code remains under the MIT License.
+> Binaries or modules built from this code may be distributed as part of the Wake ecosystem under the Wake Public License (WPL).
+> For standalone use, this fork remains free and open.
 ----
 
 <p align="center">
